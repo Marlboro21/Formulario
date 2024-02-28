@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <h2>Formulario de Registro</h2>
+        <label for="firstName">Nombres:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Apellidos:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="birthdate">Fecha de Nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="product">Producto que Desea Comprar:</label>
+        <select id="product" name="product" required>
+        <option value="">Seleccione un producto</option>
+        <option value="zapatillas">Zapatillas</option>
+        <option value="camisas">Camisas</option>
+        <option value="poleras">Poleras</option>
+        <option value="gorros">Gorros</option>
+        <option value="medias">Medias</option>
+        <option value="guantes">Guantes</option>
+        </select>
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <div id="confirmation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
